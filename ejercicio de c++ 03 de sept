@@ -1,0 +1,142 @@
+// EJERCI ( 2 ) 03 DE SEP //
+//ANDERSON SARMIENTO //
+
+#include <iostream>      //   EJERCICIO DE SUMA //
+using namespace std;
+
+
+void suma ();
+void resta ();
+void mensaje();
+void ejercicio ();
+void caracter ();
+void para ();
+void mientras ();
+void sumatoria ();
+
+
+	
+	void suma () //1
+		{
+			int n1, n2, suma;
+			cout<< " bamos a sumar \n";
+			cout<< " ingrese el primer numero \n ";
+			cin >>n1;
+			cout << " ingrese el segundo numero \n ";
+			cin >> n2;
+			suma = n1+n2 ;
+			cout << " el resultado de la suma es \n:"<< suma ;
+		
+		}
+	void ejercicio ()//2
+		{
+			cout<< "QUE IMPRIMAS IMPAR Y PAR \n";
+			int i,n1;
+			cout << " SI QUIERE NUMEROS PARES ESCRIBA MERO PARES \n ";
+			cin >> n1;
+			if (n1% 2==0)
+			{
+				for (int num=1; num <11 ; num++)
+				{
+				num = num +1;
+				cout<<num <<"\n";
+				cout << endl ;
+				}
+			}
+			else
+			{	
+			for (int num=1; num <11 ; num++)
+				{
+				cout<<num <<"\n";
+				num = num +1;
+				cout << endl ;
+				}	
+			}
+					
+		}
+	void caracter ()//3
+		{
+			cout<< " pida carcter la tabla de multiplicajon del 5(1-10)) \n";
+			int multipicacion, numero, a=1;
+			cout <<" ingrese un numero de multiplicacion ";
+			cin >> numero;
+				cout << " la tabla del" << numero << "es :"<<endl;
+				do
+				{
+					multipicacion = numero * a ;
+					cout<<numero <<" x "<< a << " = "<<multiplicacion << endl;
+					a++;
+					
+				}
+			while ( a<=10);
+			
+			
+		}
+	void mensaje()//4,5 o 6
+		{
+			cout<< " que  muestre mensaje  2 veces ( funcion ) (buenas noches) \n";
+		}
+	void sumatoria()// 7
+		{
+			int n1,n2,i;
+			cout<< " hacer la sumatoria de los numeros  0 al 10 mientras haya digitado 123 \n";
+			i=1;
+			cin >> n1;
+			while ( n1 <123)
+			{
+				n2 = 1 ;
+				while ( n2>11);
+				cout << n2;
+				n2 = n2+1 ;
+				cin >> n1;
+			}
+			
+		}
+	void para()// 8 
+		{
+			cout<< " com para imprima los numero del 20 al 70 \n";
+		}
+	void mientras ()//9
+		{
+			cout<< " con el mientras imprima 10 veces  ( esto es una imprescion ) \n";
+		}
+	
+
+main()
+	{
+			cout<< " ejercicio en clase \n";
+			cout<< " 1, para la suma \n ";	
+			cout<< " 2, para impar y par \n ";
+			cout<< " 3, pida carcter \n ";	
+			cout<< " 4,5 ó 6 que  muestre mensaje 2 veces ( funcion ) (buenas noches) \n";
+			cout<< " 7, hacer la sumatoria de los numeros  0 al 10 mientras haya digitado 123 \n" ;
+			cout<< " 8, com para imprima los numero del 20 al 70 \n";
+			cout<< " 9, con el mientras imprima 10 veces  ( esto es una imprescion ) \n ";
+			
+			
+			
+			
+			int opc;
+			cout<< " ejercicios con la funcion switin ";
+			cout<< " ingrese el numero \n ";
+			cin >> opc;
+			switch (opc)
+			{
+				case 1 : suma ();
+				break;
+				case 2: ejercicio ();
+				break;
+				case 3: caracter ();
+				break;
+				case 4,5 o 6: mensaje();
+				break;
+				case 7 : sumatoria();
+				break;
+				case 8 : para();
+				break;
+				case 9 : mientras ();
+				break;
+				
+			}		
+		
+	}
